@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+}
+section {
+    max-width: 1920px;
+    margin: auto;
+    color: #fff;
+}
+
+.row {
+    margin-bottom: 0 !important;
+}
+
+#section1, #section2, #section3, #section4 {
+    height: 600px;
+    width: 100%;
+    background-position: center;
+}
+
+#section1 {
+    background: url(../img/4.jpg);
+    background-position: top;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#section1::after {
+    content: " ";
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#section2 {
+    background: #e4ffbc;
+}
+
+#section2 .row {
+    height: 600px;
+    width: 100%;
+}
+
+#section2 .row .row{
+    height: inherit;
+}
+
+
+.descriptionSmall {
+    position: absolute;
+    top: 50%;
+}
+
+.descriptionSmall .row {
+    margin-left: 50px !important;
+}
+
+#section2BoxLeft, #section2BoxRight {
+    height: 600px;
+    background-position: center;
+}
+
+#section2BoxLeft {
+    background: url(../img/1.jpg);
+}
+
+#section2BoxRight {
+    background: url(../img/2.jpg);
+    color: black;
+}
+#section3 {
+    background: url(../img/3.jpg);
+    color: white;
+    position: relative;
+}
+
+.descriptionRow {
+    height: 600px;
+    margin-left: 50px !important;
+}
+
+.boxTitle {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.boxTitle::before, .boxTitleS::before, .boxTitleColor::before {
+    content: " ";
+    background: #fff;
+    height: 5px;
+    width: 50px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    font-weight: 600;
+    font-size:  70px
+}
+
+#section4 {
+    background: url(../img/f.png);
+}
+
+#section4 a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgb(0, 0, 0, .3);
+    border-radius: 50%;
+    transition: .1s;
+}
+
+#section4 a:hover {
+    opacity: .7;
+}
+
+#section5 {
+    background: none;
+}
+
+.boxTitleColor::before {
+    left: -10px;
+}
+
+.boxTitleColor {
+    position: absolute;
+    top: 20%;
+    left: 20%
+}
+
+.boxTitleColor h4 {
+    margin: 5px 0 25px;
+}
+
+.boxTitleColor .col {
+    padding: 0 !important;
+}
+
+#box1, #box2, #box3 {
+    height: 400px;
+}
+
+#box1{
+    background: #de411b;
+}
+
+#box2 {
+    background: #64666d;
+}
+
+#box3 {
+    background: #efeff0;
+    color: #000 !important;
+}
+
+#box3 .boxTitleColor::before {
+    background: #000 !important;
+}
+
+#section6 .row .col{
+    height: 600px;
+}
+
+#s6Left {
+    background: url(../img/g.png);
+}
+
+#s6Right {
+    background: url(../img/h.png);
+}
+
+.boxTitleS {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+}
+
+.boxTitleS::before {
+    top: 20px;
+    left: -10px;
+}
